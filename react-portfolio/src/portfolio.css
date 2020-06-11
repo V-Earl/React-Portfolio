@@ -7,6 +7,19 @@
 }
 
 .MuiTypography-colorTextPrimary,
-.MuiButton-outlined {
+.MuiButton-outlined,
+a {
   color: #f9aa33 !important;
+}
+
+.MuiTypography-noWrap {
+  font-family: "Sacramento", cursive !important;
+}
+
+.MuiTypography-h4 {
+  font-family: "Open Sans Condensed", sans-serif !important;
+}
+
+.MuiTypography-h5 {
+  font-family: "Open Sans Condensed", sans-serif !important;
 }

@@ -12,7 +12,9 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 // import Container from "@material-ui/core/Container";
-// import Link from "@material-ui/core/Link";
+import Link from "@material-ui/core/Link";
+// import { Link } from "react-router-dom";
+import images from "../images";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -46,32 +48,29 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Project() {
+export default function Project(props) {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
-      <CardMedia
+      {/* <CardMedia
         className={classes.cardMedia}
-        image="https://source.unsplash.com/random"
+        image={props.image}
         title="Image title"
-      />
+      /> */}
       <CardContent className={classes.cardContent}>
         <Typography gutterBottom variant="h5" component="h2">
-          Heading
+          {props.projectName}
         </Typography>
-        <Typography>
+        {/* <Typography>
           This is a media card. You can use this section to describe the
           content.
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary">
-          View
-        </Button>
-        <Button size="small" color="primary">
-          Edit
-        </Button>
+        <Link href={props.link}>Link</Link>
+
+        <Link href={props.github}>GitHub Repo</Link>
       </CardActions>
     </Card>
   );

@@ -16,6 +16,8 @@ import Link from "@material-ui/core/Link";
 import Project from "./Project";
 import Footer from "./Footer";
 import "../portfolio.css";
+import { Document } from "react-pdf";
+import projects from "../projects.json";
 
 // function Copyright() {
 //   return (
@@ -114,24 +116,44 @@ export default function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="outlined">GitHub</Button>
+                  <Button variant="outlined">
+                    <a href="https://github.com/V-Earl">GitHub</a>
+                  </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined">LinkedIn</Button>
-                </Grid>
-                <Grid item>
-                  <Button variant="outlined">Resume</Button>
+                  <Button variant="outlined">
+                    <a href="https://www.linkedin.com/in/valerie-earl-73504356">
+                      LinkedIn
+                    </a>
+                  </Button>
                 </Grid>
               </Grid>
+              {/* <Grid item>
+                <Button variant="outlined">
+                  <i class="medium material-icons">email</i>
+                  <p>v.earl17@gmail.com</p>
+                </Button>
+              </Grid>
+              <Grid item>
+                <Button variant="outlined">
+                  <i class="medium material-icons">phone</i>
+                  <p>(214)-223-2229</p>
+                </Button>
+              </Grid> */}
             </div>
           </Container>
         </div>
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Project />
+            {projects.map((card) => (
+              <Grid item key={card.id} xs={12} sm={6} md={4}>
+                <Project
+                  projectName={card.name}
+                  // image={card.image}
+                  link={card.appLink}
+                  github={card.githubRepo}
+                />
               </Grid>
             ))}
           </Grid>
