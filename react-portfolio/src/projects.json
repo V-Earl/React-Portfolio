@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Recipe Perfection",
+    "image": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+    "appLink": "https://v-earl.github.io/Recipe-Perfection/",
+    "githubRepo": "https://github.com/V-Earl/Recipe-Perfection"
+  },
+  {
+    "id": 2,
+    "name": "Progressive Budget",
+    "image": "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
+    "appLink": "Restaurant Owner",
+    "githubRepo": "A Giant Anchor"
+  },
+  {
+    "id": 3,
+    "name": "Employee Directory",
+    "image": "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
+    "appLink": "Cashier",
+    "githubRepo": "An Easter Island Head"
+  },
+  {
+    "id": 4,
+    "name": "friendly app",
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/fe/32/49/fe32495d45283cd6860ae122f0aeaad9.png",
+    "appLink": "https://immense-garden-32852.herokuapp.com/",
+    "githubRepo": "https://github.com/V-Earl/friendly-app"
+  },
+  {
+    "id": 5,
+    "name": "Note Taker",
+    "image": "https://vignette4.wikia.nocookie.net/vsbattles/images/3/39/Courage-0.png/revision/latest?cb=20160719055423",
+    "appLink": "A Cowardly Dog",
+    "githubRepo": "Nowhere, Kansas"
+  },
+  {
+    "id": 6,
+    "name": "Employee Tracker",
+    "image": "https://vignette1.wikia.nocookie.net/doug/images/3/3b/Doug001.gif/revision/latest?cb=20110807170511",
+    "appLink": "Student",
+    "githubRepo": "Bluffington"
+  }
+]

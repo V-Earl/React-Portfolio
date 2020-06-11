@@ -1,0 +1,12 @@
+.makeStyles-heroContent-2 {
+  background-color: #4a6572 !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #344955 !important;
+}
+
+.MuiTypography-colorTextPrimary,
+.MuiButton-outlined {
+  color: #f9aa33 !important;
+}

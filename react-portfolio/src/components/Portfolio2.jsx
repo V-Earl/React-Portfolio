@@ -1,34 +1,35 @@
-import React from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
-// import CameraIcon from "@material-ui/icons/PhotoCamera";
-// import Card from "@material-ui/core/Card";
-// import CardActions from "@material-ui/core/CardActions";
-// import CardContent from "@material-ui/core/CardContent";
-// import CardMedia from "@material-ui/core/CardMedia";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Grid from "@material-ui/core/Grid";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import { makeStyles } from "@material-ui/core/styles";
-import Container from "@material-ui/core/Container";
-import Link from "@material-ui/core/Link";
-import Project from "./Project";
-import Footer from "./Footer";
-import "../portfolio.css";
+// // import React from "react";
+// import React, { Component } from "react";
+// import AppBar from "@material-ui/core/AppBar";
+// import Button from "@material-ui/core/Button";
+// // import CameraIcon from "@material-ui/icons/PhotoCamera";
+// // import Card from "@material-ui/core/Card";
+// // import CardActions from "@material-ui/core/CardActions";
+// // import CardContent from "@material-ui/core/CardContent";
+// // import CardMedia from "@material-ui/core/CardMedia";
+// import CssBaseline from "@material-ui/core/CssBaseline";
+// import Grid from "@material-ui/core/Grid";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import Typography from "@material-ui/core/Typography";
+// import { makeStyles } from "@material-ui/core/styles";
+// import Container from "@material-ui/core/Container";
+// import Link from "@material-ui/core/Link";
+// import Project from "./Project";
+// import projects from "../projects.json";
+// import Footer from "./Footer";
 
-// function Copyright() {
-//   return (
-//     <Typography variant="body2" color="textSecondary" align="center">
-//       {"Copyright © "}
-//       <Link color="inherit" href="https://material-ui.com/">
-//         Your Website
-//       </Link>{" "}
-//       {new Date().getFullYear()}
-//       {"."}
-//     </Typography>
-//   );
-// }
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {"Copyright © "}
+      <Link color="inherit" href="https://material-ui.com/">
+        Your Website
+      </Link>{" "}
+      {new Date().getFullYear()}
+      {"."}
+    </Typography>
+  );
+}
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -92,7 +93,7 @@ export default function Album() {
               About Me
             </Typography>
             <Typography
-              // variant="h6"
+              variant="h6"
               align="justify"
               color="textSecondary"
               paragraph
@@ -114,13 +115,19 @@ export default function Album() {
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="outlined">GitHub</Button>
+                  <Button variant="outlined" color="primary">
+                    GitHub
+                  </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined">LinkedIn</Button>
+                  <Button variant="outlined" color="primary">
+                    LinkedIn
+                  </Button>
                 </Grid>
                 <Grid item>
-                  <Button variant="outlined">Resume</Button>
+                  <Button variant="outlined" color="primary">
+                    Resume
+                  </Button>
                 </Grid>
               </Grid>
             </div>
@@ -129,11 +136,30 @@ export default function Album() {
         <Container className={classes.cardGrid} maxWidth="md">
           {/* End hero unit */}
           <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Project />
-              </Grid>
-            ))}
+            {cards.map(
+              (card) =>
+                /////////////////////////////////////////////////////////
+                class Portfolio extends Component {
+                  state = {
+                    projects,
+                  };
+
+                  render() {
+                    return (
+                      <Grid item key={card} xs={12} sm={6} md={4}>
+                        {this.state.projects.map((project) => (
+                          <Project
+                            id={project.id}
+                            key={project.id}
+                            name={project.name}
+                          />
+                        ))}
+                      </Grid>
+                      //////////////////////////////////////////////////////////////////////
+                    );
+                  }
+                }
+            )}
           </Grid>
         </Container>
       </main>
