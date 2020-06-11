@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Button } from "@material-ui/core";
 // import StickyFooter from "./footer";
-import Album from "./portfolio";
+import Album from "./components/Portfolio";
 
 function App() {
   return (
