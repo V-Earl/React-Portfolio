@@ -50,7 +50,7 @@ export default function StickyFooter() {
         color="textSecondary"
         component="p"
       >
-        "Worry is a misuse of your imagination" -Unknown
+        <strong>"Worry is a misuse of your imagination" -Unknown</strong>
       </Typography>
       <Copyright />
     </footer>

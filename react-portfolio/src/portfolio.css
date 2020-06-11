@@ -13,7 +13,8 @@ a {
 }
 
 .MuiTypography-noWrap {
-  font-family: "Sacramento", cursive !important;
+  font-family: "Bad Script", cursive !important;
+  font-size: xx-large !important;
 }
 
 .MuiTypography-h4 {
@@ -22,4 +23,9 @@ a {
 
 .MuiTypography-h5 {
   font-family: "Open Sans Condensed", sans-serif !important;
+}
+
+p {
+  font-family: "Josefin Sans", sans-serif !important;
+  color: #ffffff;
 }

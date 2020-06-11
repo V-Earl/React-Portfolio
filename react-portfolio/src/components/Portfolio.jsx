@@ -107,11 +107,13 @@ export default function Album() {
                 pushing myself. So far, it has been an interesting ride but I am
                 here to enjoy the journey and learn as much as I can.
               </p>
-              A few things that I enjoy in life are traveling and learning about
-              other cultures, trying new foods, spending time with the people I
-              love and hearing my daughter laugh. These days, I am just taking
-              life as it comes and living by the motto that if it is to be, it
-              will be.
+              <p>
+                A few things that I enjoy in life are traveling and learning
+                about other cultures, trying new foods, spending time with the
+                people I love and hearing my daughter laugh. These days, I am
+                just taking life as it comes and living by the motto that if it
+                is to be, it will be.
+              </p>
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
